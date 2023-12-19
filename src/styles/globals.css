@@ -2,26 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  box-sizing: 'border-box';
+  padding: 0;
+  margin: 0;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #111827;
+  color: #d1d5db;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  overflow-x: hidden;
+}
+
+#card {
+  cursor: pointer
+}
+
+#card:hover #inner {
+  transform: perspective(56.25rem) translateY(-5%) rotateX(25deg) translateZ(0);
+  box-shadow: 0.125rem 2.188rem 2.188rem -0.5rem rgba(0,0,0, 0.75);
+
+  filter: blur(2px) brightness(75%)
+}
+
+#card #title {
+  transform: translate3d(0%, 70%, 0);
+}
+
+#card:hover #title {
+  transform: translate3d(0%, 30%, 0);
+}
+
+#title, #inner {
+  transition: all 0.5s
 }

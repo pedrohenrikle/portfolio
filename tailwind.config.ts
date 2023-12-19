@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      transformOrigin: {
+        inner:
+          'perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0)',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
