@@ -8,7 +8,7 @@ interface TechnologieProps {
 export const Technologie = ({ skill, srcImg }: TechnologieProps) => {
   return (
     <div className=" min-w-[100px] md:mr-8 flex md:flex-col justify-center items-center">
-      <Image
+      <img
         width={30}
         height={30}
         alt={skill}
