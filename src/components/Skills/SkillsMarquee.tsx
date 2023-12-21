@@ -3,7 +3,6 @@ import { Element } from 'react-scroll'
 import { Technologie } from './Technologie'
 import React from './images/react.svg'
 import nodejs from './images/nodeJS.svg'
-import materialui from './images/materialui.svg'
 import js from './images/js.svg'
 import express from './images/expressjs.svg'
 import ts from './images/ts.svg'
@@ -56,11 +55,6 @@ const dataSkills = [
   },
   {
     id: '9',
-    skill: 'Material UI',
-    img: materialui,
-  },
-  {
-    id: '10',
     skill: 'Tailwind',
     img: tailwind,
   },
