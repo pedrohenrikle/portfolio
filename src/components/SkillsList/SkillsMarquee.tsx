@@ -1,14 +1,14 @@
 import Marquee from 'react-fast-marquee'
 import { Element } from 'react-scroll'
 import { Technologie } from './Technologie'
-import React from './images/react.svg'
-import nodejs from './images/nodeJS.svg'
+import react from './images/react.svg'
+import nodejs from './images/nodejs.svg'
 import js from './images/js.svg'
-import express from './images/expressjs.svg'
+import express from './images/express.svg'
 import ts from './images/ts.svg'
 import html from './images/html.svg'
 import css from './images/css.svg'
-import tailwind from './images/tailwindcss.svg'
+import tailwind from './images/tailwind.svg'
 import nextjs from './images/nextjs.svg'
 
 const dataSkills = [
@@ -34,13 +34,13 @@ const dataSkills = [
   },
   {
     id: '5',
-    skill: 'ReactJS',
-    img: React,
+    skill: 'reactjs',
+    img: react,
   },
 
   {
     id: '6',
-    skill: 'NodeJS',
+    skill: 'nodejs',
     img: nodejs,
   },
   {
@@ -50,7 +50,7 @@ const dataSkills = [
   },
   {
     id: '8',
-    skill: 'NextJS',
+    skill: 'Nextjs',
     img: nextjs,
   },
   {

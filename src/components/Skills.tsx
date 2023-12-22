@@ -1,4 +1,4 @@
-import { SkillsMarquee } from './Skills/SkillsMarquee'
+import { SkillsMarquee } from './SkillsList/SkillsMarquee'
 
 export default function Skill() {
   return (
