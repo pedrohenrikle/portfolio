@@ -34,13 +34,13 @@ const dataSkills = [
   },
   {
     id: '5',
-    skill: 'reactjs',
+    skill: 'ReactJS',
     img: react,
   },
 
   {
     id: '6',
-    skill: 'nodejs',
+    skill: 'NodeJS',
     img: nodejs,
   },
   {
@@ -50,7 +50,7 @@ const dataSkills = [
   },
   {
     id: '8',
-    skill: 'Nextjs',
+    skill: 'NextJS',
     img: nextjs,
   },
   {
@@ -63,8 +63,8 @@ const dataSkills = [
 export const SkillsMarquee = () => {
   return (
     <Element name="Skills">
-      <div className="mt-0 xl:mt-0 py-2 ">
-        <div className="flex-center-col md:flex-center-row gap-2 md:gap-4 py-2 md:py-4 w-screen p-48">
+      <div className="mt-0 xl:mt-0 py-2 w-screen">
+        <div className="flex-center-col md:flex-center-row gap-2 md:gap-4 py-2 md:py-4 w-full p-48">
           <Marquee autoFill speed={60}>
             {dataSkills.map(({ id, skill, img }) => (
               <Technologie key={id} srcImg={img} skill={skill} />

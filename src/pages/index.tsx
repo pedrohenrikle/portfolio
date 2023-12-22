@@ -1,7 +1,9 @@
+/* eslint-disable array-callback-return */
 /* eslint-disable react/jsx-no-comment-textnodes */
 import Presentation from '@/components/Presentation'
 import ProfileImage from '@/components/ProfileImage'
-import Project from '@/components/Project'
+import Project, { ProjectsList } from '@/components/Projects/Project'
+import { ProjectMainPage } from '@/components/Projects/ProjectMainPage'
 import Skills from '@/components/Skills'
 import SocialMedias from '@/components/SocialMedias'
 
@@ -39,19 +41,7 @@ export default function Home() {
       <Skills />
 
       <div className="flex w-full justify-center py-40">
-        <div className="flex-1 px-40">
-          <h1 className="text-xl font-mono">
-            <span className="text-pink-400">const</span>{' '}
-            <span className="text-green-400">Projects</span>{' '}
-            <span className="text-pink-400">=</span> [
-          </h1>
-          <div className="flex flex-wrap gap-16">
-            <Project />
-            <Project />
-            <Project />
-            <Project />
-          </div>
-        </div>
+        <ProjectMainPage />
       </div>
     </>
   )
