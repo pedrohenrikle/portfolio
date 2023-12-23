@@ -7,7 +7,7 @@ interface PresentationProps {
 export default function Presentation({ techs }: PresentationProps) {
   return (
     <div>
-      <div className="font-bold text-5xl  bg-gradient-to-r from-pink-500 to-yellow-500 text-transparent bg-clip-text">
+      <div className="font-bold text-5xl bg-gradient-to-r from-pink-500 to-yellow-500 text-transparent bg-clip-text">
         Pedro Henrique Fermino Klein
       </div>
 
