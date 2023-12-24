@@ -7,7 +7,7 @@ import igniteShop from './images/igniteshop.png'
 import nlwSpacetime from './images/nlwspacetime.png'
 import designSystem from './images/designsystem.png'
 import githubBlog from './images/githubblog.png'
-import testme from './images/testme.png'
+import { Github, Play } from 'lucide-react'
 
 /* eslint-disable @next/next/no-img-element */
 interface ProjectProps {
@@ -62,7 +62,6 @@ export default function Project({
   linkPreview,
   linkGithub,
   imagePreview,
-  name,
 }: ProjectProps) {
   return (
     <article
@@ -88,22 +87,24 @@ export default function Project({
           tabIndex={!linkPreview ? -1 : undefined}
         >
           {!linkPreview ? (
+            ''
+          ) : (
             <h1
               id="title"
-              className="absolute inset-0 mx-auto w-fit mt-10 h-fit bg-gray-50 text-2xl text-cyan-950 font-bold px-5 py-3 rounded-lg"
+              className="flex text-slate-300 border border-opacity-30 border-slate-300 font-bold w-fit h-fit text-2xl gap-3 items-center justify-center mx-auto inset-0 absolute rounded-2xl box-shadow from-gray-900 to-gray-950 bg-gradient-to-br hover:from-green-400 hover:to-blue-500 hover:text-slate-900 px-6 py-4"
             >
-              {name}
+              Test!
+              <Play />
             </h1>
-          ) : (
-            <Image
-              height={500}
-              width={500}
-              src={testme}
-              alt=""
-              className="w-48 mx-auto inset-0 absolute rounded-2xl box-shadow"
-              id="title"
-            />
           )}
+        </Link>
+        <Link href={linkGithub}>
+          <button
+            id="title"
+            className="flex text-slate-300 font-bold w-fit h-fit text-2xl gap-3 ml-auto inset-0 absolute rounded-2xl box-shadow bg-gray-950 border border-opacity-30 border-slate-300 px-4 py-4 mt-28 mr-2 hover:text-gray-950 hover:bg-slate-300"
+          >
+            <Github />
+          </button>
         </Link>
       </div>
     </article>

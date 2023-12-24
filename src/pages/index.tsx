@@ -6,11 +6,16 @@ import { ProjectMainPage } from '@/components/Projects/ProjectMainPage'
 import Skills from '@/components/Skills'
 import SocialMedias from '@/components/SocialMedias'
 import { MousePointerClick } from 'lucide-react'
+import Head from 'next/head'
 import Link from 'next/link'
 
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Portfolio | Pedro Henrique Fermino Klein</title>
+      </Head>
+
       <div className="h-screen w-screen">
         <div className="bg-gradient-to-b from-zinc-900 via-slate-900 to-slate-900">
           <div className="flex w-full px-40 pt-40 pb-20 justify-center">
@@ -21,9 +26,10 @@ export default function Home() {
 
               <div className="flex w-full">
                 <p className="flex font-mono text-slate-500 w-4/5">
-                  /// Desenvolvedor Full Stack que ama tecnologia, apaixonado em
-                  transformar ideias e conceitos em realidade. Ajudando você a
-                  se conectar com o mundo!
+                  {'/*'} Desenvolvedor Full Stack e amante de tecnologia,
+                  mergulho de cabeça na missão de transformar ideias em
+                  realidade. Sou movido pela paixão de aprender os conceitos por
+                  trás das coisas! {'*/'}
                 </p>
               </div>
 
@@ -42,7 +48,7 @@ export default function Home() {
         </div>
         <Skills />
 
-        <div className="flex w-full justify-center py-40">
+        <div className="flex w-full justify-center py-32">
           <ProjectMainPage />
         </div>
 

@@ -10,6 +10,8 @@ import html from './images/html.svg'
 import css from './images/css.svg'
 import tailwind from './images/tailwind.svg'
 import nextjs from './images/nextjs.svg'
+import prisma from './images/prisma.jpg'
+import sqlite from './images/sqlite.png'
 
 const dataSkills = [
   {
@@ -37,26 +39,40 @@ const dataSkills = [
     skill: 'ReactJS',
     img: react,
   },
-
   {
     id: '6',
+    skill: 'React Native',
+    img: react,
+  },
+  {
+    id: '7',
     skill: 'NodeJS',
     img: nodejs,
   },
   {
-    id: '7',
+    id: '8',
     skill: 'express',
     img: express,
   },
   {
-    id: '8',
+    id: '9',
     skill: 'NextJS',
     img: nextjs,
   },
   {
-    id: '9',
+    id: '10',
     skill: 'Tailwind',
     img: tailwind,
+  },
+  {
+    id: '11',
+    skill: 'Prisma',
+    img: prisma,
+  },
+  {
+    id: '12',
+    skill: 'SQLite',
+    img: sqlite,
   },
 ]
 
