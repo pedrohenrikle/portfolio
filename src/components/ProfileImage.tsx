@@ -3,9 +3,9 @@ import Image from 'next/image'
 export default function ProfileImage() {
   return (
     <div className="flex justify-center">
-      <div className="p-1 bg-gradient-to-r from-green-400 to-blue-500 rounded-full transition-all">
+      <div className="p-1">
         <Image
-          className="rounded-full"
+          className="rounded-full border-dashed border-pink-500 border-4"
           alt="Profile picture"
           src={'https://github.com/pedrohenrikle.png'}
           width={400}

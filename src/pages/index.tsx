@@ -28,7 +28,7 @@ export default function Home() {
               </div>
 
               <div>
-                <button className="text-3xl duration-200 shadow-inner shadow-purple-950 font-bold px-16 py-1.5 rounded-3xl bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 hover:text-zinc-800 transition-all">
+                <button className="text-3xl duration-200 shadow-inner shadow-purple-950 font-bold px-16 py-1.5 rounded-3xl bg-gradient-to-br hover:from-green-400 hover:to-blue-500 from-pink-500 to-yellow-500 text-zinc-800 hover:text-slate-200 transition-all">
                   CV
                 </button>
               </div>
@@ -53,7 +53,7 @@ export default function Home() {
               href={
                 'mailto:pedro.klein.sl@gmail.com?subject=Construindo um futuro!'
               }
-              className="flex w-fit text-3xl duration-200 shadow-inner shadow-slate-950 font-bold px-14 py-5 rounded-full bg-gradient-to-r hover:from-green-400 hover:to-blue-500 from-amber-600 to-yellow-500 text-yellow-950 hover:text-rose-50 transition-all items-center gap-4"
+              className="flex w-fit text-3xl duration-200 shadow-inner shadow-slate-950 font-bold px-14 py-5 rounded-full bg-gradient-to-br hover:from-green-400 hover:to-blue-500 from-pink-500 to-yellow-500 text-zinc-800 hover:text-rose-50 transition-all items-center gap-4"
             >
               CLIQUE AQUI
               <MousePointerClick className="w-8 h-8" />
