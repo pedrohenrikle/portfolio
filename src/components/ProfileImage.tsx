@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function ProfileImage() {
   return (
-    <div className="flex justify-center">
+    <div className="justify-center hidden lg:block">
       <div className="p-1">
         <Image
           className="rounded-full border-dashed border-pink-500 border-4"

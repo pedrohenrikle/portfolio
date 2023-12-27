@@ -68,7 +68,7 @@ export default function Project({
       id="card"
       className="grid shadow-xl place-items-center w-fit mt-8 bg-gradient-to-tr from-gray-700 via-gray-900 to-slate-800 p-10 rounded-2xl"
     >
-      <div className="w-96 relative">
+      <div className="w-96 relative max-[676px]:w-64">
         <div>
           <Link href={linkGithub} target="_blank">
             <Image
@@ -91,7 +91,7 @@ export default function Project({
           ) : (
             <h1
               id="title"
-              className="flex text-slate-300 border border-opacity-30 border-slate-300 font-bold w-fit h-fit text-2xl gap-3 items-center justify-center mx-auto inset-0 absolute rounded-2xl box-shadow from-gray-900 to-gray-950 bg-gradient-to-br hover:from-green-400 hover:to-blue-500 hover:text-slate-900 px-6 py-4"
+              className="max-[676px]:-mt-6 flex text-slate-300 border border-opacity-30 border-slate-300 font-bold w-fit h-fit text-2xl gap-3 items-center justify-center mx-auto inset-0 absolute rounded-2xl box-shadow from-gray-900 to-gray-950 bg-gradient-to-br hover:from-green-400 hover:to-blue-500 hover:text-slate-900 px-6 py-4"
             >
               Test!
               <Play />
@@ -101,7 +101,7 @@ export default function Project({
         <Link href={linkGithub}>
           <button
             id="title"
-            className="flex text-slate-300 font-bold w-fit h-fit text-2xl gap-3 ml-auto inset-0 absolute rounded-2xl box-shadow bg-gray-950 border border-opacity-30 border-slate-300 px-4 py-4 mt-28 mr-2 hover:text-gray-950 hover:bg-slate-300"
+            className="flex text-slate-300 font-bold w-fit h-fit text-2xl gap-3 ml-auto inset-0 absolute rounded-2xl box-shadow bg-gray-950 border border-opacity-30 border-slate-300 px-4 py-4 mt-28 max-[676px]:mt-16 mr-2 hover:text-gray-950 hover:bg-slate-300"
           >
             <Github />
           </button>

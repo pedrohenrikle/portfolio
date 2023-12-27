@@ -15,7 +15,7 @@ export const Technologie = ({ skill, srcImg }: TechnologieProps) => {
         className="block w-[30px] h-[30px] lg:w-[40px] lg:h-[40px] mt-2 object-contain hover:scale-125 transition-all duration-200"
         src={srcImg}
       />
-      <p className=" tracking-widest font-semibold text-[.625rem] md:text-xs">
+      <p className="hidden min-[767px]:block tracking-widest font-semibold text-[.625rem] md:text-xs">
         {skill}
       </p>
     </div>

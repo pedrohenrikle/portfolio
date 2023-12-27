@@ -4,6 +4,7 @@
 
 html {
   scroll-behavior: smooth;
+  
 }
 
 html ::-webkit-scrollbar {
@@ -21,6 +22,7 @@ html ::-webkit-scrollbar-track {
   box-sizing: 'border-box';
   padding: 0;
   margin: 0;
+  
 }
 
 body {
@@ -30,6 +32,7 @@ body {
   font-size: 1.25rem;
   line-height: 1.75rem;
   overflow-x: hidden;
+  
 }
 
 #card {

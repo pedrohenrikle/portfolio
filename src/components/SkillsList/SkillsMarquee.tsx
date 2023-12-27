@@ -78,9 +78,9 @@ const dataSkills = [
 
 export const SkillsMarquee = () => {
   return (
-    <Element name="Skills">
-      <div className="mt-0 xl:mt-0 py-2 w-screen">
-        <div className="flex-center-col md:flex-center-row gap-2 md:gap-4 py-2 md:py-4 w-full p-48">
+    <Element name="Skills" className="w-full">
+      <div className="mt-0 xl:mt-0 py-2 w-full">
+        <div className="flex w-full flex-center-col md:flex-center-row gap-2 md:gap-4 py-2 md:py-4">
           <Marquee autoFill speed={60}>
             {dataSkills.map(({ id, skill, img }) => (
               <Technologie key={id} srcImg={img} skill={skill} />
