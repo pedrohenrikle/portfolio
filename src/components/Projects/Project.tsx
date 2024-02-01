@@ -7,6 +7,7 @@ import igniteShop from './images/igniteshop.png'
 import nlwSpacetime from './images/nlwspacetime.png'
 import designSystem from './images/designsystem.png'
 import githubBlog from './images/githubblog.png'
+import algorithmInJs from './images/algorithminjs.png'
 import { Github, Play } from 'lucide-react'
 
 /* eslint-disable @next/next/no-img-element */
@@ -26,9 +27,9 @@ export const ProjectsList = [
   },
   {
     id: 2,
-    linkPreview: 'https://next-ignite-shop.vercel.app/',
-    linkGithub: 'https://github.com/pedrohenrikle/next-ignite-shop',
-    imagePreview: igniteShop,
+    linkPreview: 'https://algorithms-in-js.vercel.app/',
+    linkGithub: 'https://github.com/pedrohenrikle/algorithms-in-js',
+    imagePreview: algorithmInJs,
   },
   {
     id: 3,
@@ -39,19 +40,25 @@ export const ProjectsList = [
   },
   {
     id: 4,
+    linkPreview: 'https://next-ignite-shop.vercel.app/',
+    linkGithub: 'https://github.com/pedrohenrikle/next-ignite-shop',
+    imagePreview: igniteShop,
+  },
+  {
+    id: 5,
     linkPreview: 'https://pedrohenrikle.github.io/design-system/',
     linkGithub: 'https://github.com/pedrohenrikle/design-system',
     imagePreview: designSystem,
   },
   {
-    id: 5,
+    id: 6,
     name: 'NLW Spacetime',
     linkPreview: '',
     linkGithub: 'https://github.com/pedrohenrikle/nlw-spacetime',
     imagePreview: nlwSpacetime,
   },
   {
-    id: 6,
+    id: 7,
     linkPreview: 'https://github-blog-lime.vercel.app/',
     linkGithub: 'https://github.com/pedrohenrikle/github-blog',
     imagePreview: githubBlog,
@@ -98,7 +105,7 @@ export default function Project({
             </h1>
           )}
         </Link>
-        <Link href={linkGithub}>
+        <Link href={linkGithub} target="_blank">
           <button
             id="title"
             className="flex text-slate-300 font-bold w-fit h-fit text-2xl gap-3 ml-auto inset-0 absolute rounded-2xl box-shadow bg-gray-950 border border-opacity-30 border-slate-300 px-4 py-4 mt-28 max-[676px]:mt-16 mr-2 hover:text-gray-950 hover:bg-slate-300"
