@@ -12,6 +12,9 @@ import tailwind from './images/tailwind.svg'
 import nextjs from './images/nextjs.svg'
 import prisma from './images/prisma.jpg'
 import sqlite from './images/sqlite.png'
+import fastify from './images/fastify.svg'
+import docker from './images/docker.svg'
+import postgresql from './images/postgresql.svg'
 
 const dataSkills = [
   {
@@ -26,17 +29,17 @@ const dataSkills = [
   },
   {
     id: '3',
-    skill: 'Javascript',
+    skill: 'JavaScript',
     img: js,
   },
   {
     id: '4',
-    skill: 'Typescript',
+    skill: 'TypeScript',
     img: ts,
   },
   {
     id: '5',
-    skill: 'ReactJS',
+    skill: 'React.js',
     img: react,
   },
   {
@@ -46,31 +49,46 @@ const dataSkills = [
   },
   {
     id: '7',
-    skill: 'NodeJS',
-    img: nodejs,
-  },
-  {
-    id: '8',
-    skill: 'express',
-    img: express,
-  },
-  {
-    id: '9',
-    skill: 'NextJS',
+    skill: 'Next.js',
     img: nextjs,
   },
   {
-    id: '10',
+    id: '8',
     skill: 'Tailwind',
     img: tailwind,
   },
   {
+    id: '9',
+    skill: 'Node.js',
+    img: nodejs,
+  },
+  {
+    id: '10',
+    skill: 'express',
+    img: express,
+  },
+  {
     id: '11',
+    skill: 'Fastify',
+    img: fastify,
+  },
+  {
+    id: '12',
     skill: 'Prisma',
     img: prisma,
   },
   {
-    id: '12',
+    id: '13',
+    skill: 'Docker',
+    img: docker,
+  },
+  {
+    id: '14',
+    skill: 'PostgreSQL',
+    img: postgresql,
+  },
+  {
+    id: '15',
     skill: 'SQLite',
     img: sqlite,
   },
