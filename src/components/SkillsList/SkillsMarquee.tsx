@@ -16,79 +16,79 @@ import fastify from './images/fastify.svg'
 import docker from './images/docker.svg'
 import postgresql from './images/postgresql.svg'
 
-const dataSkills = [
+export const dataSkills = [
   {
-    id: '1',
+    id: 1,
     skill: 'HTML',
     img: html,
   },
   {
-    id: '2',
+    id: 2,
     skill: 'CSS',
     img: css,
   },
   {
-    id: '3',
+    id: 3,
     skill: 'JavaScript',
     img: js,
   },
   {
-    id: '4',
+    id: 4,
     skill: 'TypeScript',
     img: ts,
   },
   {
-    id: '5',
+    id: 5,
     skill: 'React.js',
     img: react,
   },
   {
-    id: '6',
+    id: 6,
     skill: 'React Native',
     img: react,
   },
   {
-    id: '7',
+    id: 7,
     skill: 'Next.js',
     img: nextjs,
   },
   {
-    id: '8',
+    id: 8,
     skill: 'Tailwind',
     img: tailwind,
   },
   {
-    id: '9',
+    id: 9,
     skill: 'Node.js',
     img: nodejs,
   },
   {
-    id: '10',
+    id: 10,
     skill: 'express',
     img: express,
   },
   {
-    id: '11',
+    id: 11,
     skill: 'Fastify',
     img: fastify,
   },
   {
-    id: '12',
+    id: 12,
     skill: 'Prisma',
     img: prisma,
   },
   {
-    id: '13',
+    id: 13,
     skill: 'Docker',
     img: docker,
   },
   {
-    id: '14',
+    id: 14,
     skill: 'PostgreSQL',
     img: postgresql,
   },
   {
-    id: '15',
+    id: 15,
     skill: 'SQLite',
     img: sqlite,
   },
