@@ -1,10 +1,14 @@
 import { Github, Linkedin, Mail, Instagram, Twitter } from 'lucide-react'
 import Link from 'next/link'
 
-export default function SocialMedias() {
+interface SocialMediasProps {
+  vertical?: boolean
+}
+
+export default function SocialMedias({ vertical = true }: SocialMediasProps) {
   return (
     <div>
-      <ul className="flex flex-col justify-between h-full">
+      <ul className={`flex ${vertical ? 'flex-col' : ''} gap-6 h-full`}>
         <Link href={'https://github.com/pedrohenrikle'} target="_blank">
           <li className="justify-center align-middle bg-gray-700 lg:p-4 md:p-3 max-[767px]:p-3 rounded-full hover:text-gray-100 hover:bg-gray-800 hover:scale-125 transition-all">
             <Github />

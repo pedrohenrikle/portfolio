@@ -10,6 +10,7 @@ export default function ProfileImage() {
           src={'https://github.com/pedrohenrikle.png'}
           width={400}
           height={400}
+          priority
         />
       </div>
     </div>

@@ -1,11 +1,11 @@
 /* eslint-disable array-callback-return */
 /* eslint-disable react/jsx-no-comment-textnodes */
+import { Footer } from '@/components/Footer'
 import Presentation from '@/components/Presentation'
 import ProfileImage from '@/components/ProfileImage'
 import { ProjectMainPage } from '@/components/Projects/ProjectMainPage'
 import Skills from '@/components/Skills'
 import SocialMedias from '@/components/SocialMedias'
-import { MousePointerClick } from 'lucide-react'
 import Head from 'next/head'
 import Link from 'next/link'
 
@@ -53,38 +53,11 @@ export default function Home() {
 
         <Skills />
 
-        <div className="flex w-full justify-center py-28">
+        <div className="flex w-full py-28">
           <ProjectMainPage />
         </div>
 
-        <div className="w-screen flex flex-col items-center px-40 pt-20 max-[676px]:px-10 max-[676px]:pt-10 pb-5 bg-slate-950">
-          <section className="flex flex-col gap-5 pb-20 font-bold items-center">
-            <h1 className="text-5xl max-[676px]:text-3xl">
-              Bora construir um futuro juntos?
-            </h1>
-            <Link
-              href={
-                'mailto:pedro.klein.sl@gmail.com?subject=Construindo um futuro!'
-              }
-              className="flex w-fit text-3xl max-[676px]:text-2xl max-[676px]:py-2 duration-200 shadow-inner shadow-slate-950 font-bold px-14 py-5 rounded-full bg-gradient-to-br hover:from-green-400 hover:to-blue-500 from-pink-500 to-yellow-500 text-zinc-800 hover:text-rose-50 transition-all items-center gap-4"
-            >
-              CLIQUE AQUI
-              <MousePointerClick className="w-8 h-8" />
-            </Link>
-          </section>
-          <div className="flex gap-5 font-mono text-slate-600 max-[676px]:text-base">
-            <p className="flex-1">Pedro Henrique Fermino Klein </p>
-            <span>|</span>
-            <Link
-              target="_blank"
-              className="text-cyan-700 hover:text-blue-500 transition-all duration-200 max-[676px]:text-base"
-              href={'https://linktr.ee/pedrohenrikle'}
-            >
-              {' '}
-              Social Medias
-            </Link>
-          </div>
-        </div>
+        <Footer />
       </div>
     </>
   )
