@@ -45,7 +45,7 @@ export function FormButton() {
     }
 
     try {
-      const response = await fetch('/api/send', {
+      const response = await fetch('/api/send.api.ts', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
