@@ -6,15 +6,11 @@ import { Resend } from 'resend'
 
 const resend = new Resend(process.env.RESEND_API_KEY)
 
-export default async (req: NextApiRequest, res: NextApiResponse) => {
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse,
+) {
   try {
-    res.setHeader(
-      'Access-Control-Allow-Origin',
-      'https://portfolio-lake-five-28.vercel.app',
-    )
-    res.setHeader('Access-Control-Allow-Methods', 'POST')
-    res.setHeader('Access-Control-Allow-Headers', 'Content-Type')
-
     if (req.method !== 'POST') {
       res.status(405).end()
       return

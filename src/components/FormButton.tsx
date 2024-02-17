@@ -1,5 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
+import { api } from '@/lib/axios'
 import * as Dialog from '@radix-ui/react-dialog'
+import axios from 'axios'
 import { MousePointerClick } from 'lucide-react'
 import { useState } from 'react'
 import { useForm, SubmitHandler } from 'react-hook-form'
@@ -45,18 +47,11 @@ export function FormButton() {
     }
 
     try {
-      const response = await fetch('/api/send.api.ts', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
+      await api.post('/send', {
+        name: data.name,
+        email: data.email,
+        message: data.message,
       })
-
-      if (!response.ok) {
-        const errorMessage = await response.text()
-        throw new Error(`Erro ao enviar os dados. Detalhes: ${errorMessage}`)
-      }
 
       setValue('name', '')
       setValue('email', '')
