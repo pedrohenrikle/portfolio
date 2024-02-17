@@ -54,7 +54,8 @@ export function FormButton() {
       })
 
       if (!response.ok) {
-        throw new Error('Erro ao enviar os dados')
+        const errorMessage = await response.text()
+        throw new Error(`Erro ao enviar os dados. Detalhes: ${errorMessage}`)
       }
 
       setValue('name', '')
