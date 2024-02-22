@@ -3,6 +3,7 @@ import { EmailTemplate } from '../../components/EmailTemplate'
 import { FormData } from '@/components/FormButton'
 
 import { Resend } from 'resend'
+import { setCookie } from 'nookies'
 
 const resend = new Resend(`${process.env.RESEND_API_KEY}`)
 
@@ -31,18 +32,24 @@ export default async function handler(
     })
 
     if (response.data) {
-      // Se houver dados na resposta, encerramos a rota
+      // Se houver dados na resposta, encerre a rota
+
+      // Define um cookie indicando que o usuário já entrou em contato
+      setCookie({ res }, '@portfolio:voted', 'true', {
+        maxAge: 60 * 60 * 24 * 1, // 1 day
+        path: '/', // Especifica o caminho do cookie
+      })
+
       return res.status(201).end()
     } else if (response.error) {
-      // Se houver um erro na resposta, lançamos uma exceção
+      // Se houver um erro na resposta, lance uma exceção
       throw new Error(`Failed to send email: ${response.error.message}`)
     } else {
-      // Se a resposta não tiver dados nem erro, consideramos como um erro desconhecido
+      // Se a resposta não tiver dados nem erro, considere como um erro desconhecido
       throw new Error('Unknown error in email sending')
     }
   } catch (error) {
-    // Se ocorrer um erro durante o processamento, retornamos um erro interno do servidor
-    console.error(error)
+    // Se ocorrer um erro durante o processamento, retorne um erro interno do servidor
     return res.status(500).json({ error: 'Internal server error' })
   }
 }

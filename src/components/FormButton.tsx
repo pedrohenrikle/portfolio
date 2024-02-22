@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { api } from '@/lib/axios'
 import * as Dialog from '@radix-ui/react-dialog'
-import axios from 'axios'
-import { MousePointerClick } from 'lucide-react'
-import { useState } from 'react'
+import { MousePointerClick, CheckCircle2 } from 'lucide-react'
+import { parseCookies } from 'nookies'
+import { useEffect, useState } from 'react'
 import { useForm, SubmitHandler } from 'react-hook-form'
 
 export interface FormData {
@@ -13,9 +13,22 @@ export interface FormData {
 }
 
 export function FormButton() {
+  const [hasVoted, setHasVoted] = useState(false)
   const { register, handleSubmit, formState, setValue, setError } =
     useForm<FormData>()
   const [isDialogOpen, setIsDialogOpen] = useState(false)
+  const [formSubmitted, setFormSubmitted] = useState(false)
+
+  useEffect(() => {
+    const cookies = parseCookies()
+    setHasVoted(cookies['@portfolio:voted'] === 'true')
+  }, [])
+
+  const buttonIcon = hasVoted ? (
+    <CheckCircle2 className="w-8 h-8" />
+  ) : (
+    <MousePointerClick className="w-8 h-8" />
+  )
 
   const isEmailValid = (email: string) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
@@ -59,6 +72,8 @@ export function FormButton() {
 
       alert('Obrigado pelo contato!')
       setIsDialogOpen(false)
+      setFormSubmitted(true)
+      setHasVoted(true)
     } catch (error) {
       console.error('Erro ao enviar os dados:', error)
     }
@@ -69,13 +84,21 @@ export function FormButton() {
       open={isDialogOpen}
       onOpenChange={(open) => setIsDialogOpen(open)}
     >
-      <Dialog.Trigger asChild>
+      <Dialog.Trigger asChild disabled={hasVoted || formSubmitted}>
         <button
-          className="flex w-fit text-3xl max-[676px]:text-2xl max-[676px]:py-2 duration-200 shadow-inner shadow-slate-950 font-bold px-14 py-5 rounded-full bg-gradient-to-br hover:from-green-400 hover:to-blue-500 from-pink-500 to-yellow-500 text-zinc-800 hover:text-rose-50 transition-all items-center gap-4"
+          className={`flex w-fit text-3xl max-[676px]:text-2xl max-[676px]:py-2  shadow-inner shadow-slate-950 font-bold px-14 py-5 rounded-full items-center gap-4  bg-gradient-to-br transition-all 
+  
+      ${
+        hasVoted
+          ? 'hover:from-green-600 hover:to-green-500 from-green-500 to-green-800 text-zinc-800 cursor-not-allowed'
+          : ' hover:from-green-400 hover:to-blue-500 from-pink-500 to-yellow-500 text-zinc-800 hover:text-rose-50 '
+      }
+         `}
           onClick={() => setIsDialogOpen(true)}
+          disabled={hasVoted || formSubmitted}
         >
-          CLIQUE AQUI
-          <MousePointerClick className="w-8 h-8" />
+          {formSubmitted ? 'ENVIADO' : hasVoted ? '' : 'CLIQUE AQUI'}
+          {formSubmitted ? <CheckCircle2 className="w-8 h-8" /> : buttonIcon}
         </button>
       </Dialog.Trigger>
       <Dialog.Portal>
