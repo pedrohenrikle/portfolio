@@ -8,6 +8,7 @@ import uploadAi from './images/uploadai.png'
 import igniteShop from './images/igniteshop.png'
 import polls from './images/polls.png'
 import algorithmInJs from './images/algorithminjs.png'
+import gympassApi from './images/gympassapi.png'
 import { Github, Play } from 'lucide-react'
 
 /* eslint-disable @next/next/no-img-element */
@@ -23,6 +24,16 @@ interface ProjectProps {
 export const ProjectsList = [
   {
     id: 1,
+    name: 'GympassAPI',
+    description:
+      'Baseado em Node.js e Typescript, desenvolvido com conceitos como SOLID, DDD, TDD, Repository Pattern, Factory Method e sistema RBAC. Possui testes unitários para os casos de uso e testes E2E para cada controlador HTTP.',
+    linkPreview: '',
+    linkGithub: 'https://github.com/pedrohenrikle/gympass-api',
+    imagePreview: gympassApi,
+    technologies: [4, 9, 11, 12, 13, 14],
+  },
+  {
+    id: 2,
     name: 'Ignite Call',
     description:
       'O Ignite Call é uma aplicação de agendamento de chamadas. Este projeto serviu de base para reforçar os conhecimentos no framework NextJs, junto ao conceitos de API Routes, páginas SSG e SSR. Além disso, a aplicação possui conectividade com o GoogleAPIs, podendo marcar agendamentos no Google Calendar, além de gerar salas no Google Meet para as reuniões automaticamente.',
@@ -32,7 +43,7 @@ export const ProjectsList = [
     technologies: [1, 2, 3, 4, 5, 7, 8, 9, 12, 15],
   },
   {
-    id: 2,
+    id: 3,
     name: 'Algorithms in JavaScript',
     description:
       'Este é um projeto pessoal que surgiu de uma necessidade. Buscando aprender sobre algorítmos de ordenação e busca, vi que normalmente são usadas outras linguagens de exemplo, como Python, C, C++ e Java. A partir disso, nasceu a ideia de trazer um local de consulta e aprendizado para a comunidade no ambiente JavaScript.',
@@ -42,7 +53,7 @@ export const ProjectsList = [
     technologies: [1, 2, 3, 4, 5, 8, 9],
   },
   {
-    id: 3,
+    id: 4,
     name: 'upload.ai',
     description:
       'O upload.ai é uma aplicação com integração a API da OpenAI para realizar requisições a IA. Aqui, podemos fazer o upload do vídeo desejado e passar um contexto para melhor precisão na resposta. Podemos (até o momento) gerar títulos de vídeos e descrições.',
@@ -52,7 +63,7 @@ export const ProjectsList = [
     technologies: [1, 2, 3, 4, 5, 8, 9, 11, 12, 15],
   },
   {
-    id: 4,
+    id: 5,
     name: 'Polls',
     description:
       'Este é um projeto back-end do desenvolvimento de uma API para criação, votação e checagem em tempo real via WebSockets de votações.',
@@ -62,7 +73,7 @@ export const ProjectsList = [
     technologies: [4, 9, 11, 12, 13, 14, 15],
   },
   {
-    id: 5,
+    id: 6,
     name: 'Ignite Shop',
     description:
       'O Ignite Shop é uma loja online para venda de camisetas. Este projeto serviu de base para aprender os fundamentos do framework NextJs, junto ao conceitos de API Routes, Fallback e páginas SSG e SSR 💡.',
