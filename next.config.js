@@ -4,15 +4,17 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'github.com',
+        hostname: 'images.unsplash.com',
       },
       {
         protocol: 'https',
-        hostname: 'raw.githubusercontent.com',
+        hostname: 'avatars.githubusercontent.com',
       },
     ],
   },
-  reactStrictMode: false,
-}
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+};
 
-export default nextConfig
+module.exports = nextConfig;

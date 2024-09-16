@@ -29,15 +29,22 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML, CSS e JavaScript
 - Git e Github
-- Biblotecas:
-    - [nextjs](https://nextjs.org/)
+- Bibliotecas:
+    - [@react-email/components](https://react.email/docs/components/tailwind)
+    - [@react-email/tailwind](https://react.email/docs/components/tailwind)
+    - [clsx](https://github.com/lukeed/clsx)
+    - [framer-motion](https://www.framer.com/api/motion/)
     - [lucide-react](https://lucide.dev/)
-    - [react](https://pt-br.reactjs.org/)
-    - [react-fast-marquee](https://www.react-fast-marquee.com/)
-    - [react-scroll](https://www.npmjs.com/package/react-scroll)
-    - [tailwindcss](https://tailwindcss.com/)
-    - [typescript](https://www.typescriptlang.org/)
-    - [typewriter-effect](https://www.npmjs.com/package/typewriter-effect)
+    - [next](https://nextjs.org/)
+    - [react](https://reactjs.org/)
+    - [react-dom](https://reactjs.org/docs/react-dom.html)
+    - [react-hot-toast](https://react-hot-toast.com/)
+    - [react-icons](https://react-icons.github.io/react-icons/)
+    - [react-intersection-observer](https://www.npmjs.com/package/react-intersection-observer)
+    - [react-vertical-timeline-component](https://www.npmjs.com/package/react-vertical-timeline-component)
+    - [resend](https://resend.com/)
+    - [tailwind-merge](https://www.npmjs.com/package/tailwind-merge)
+    - [tailwindcss-animate](https://github.com/jamiebuilds/tailwindcss-animate)
 
 ## 💻 Projeto
 
