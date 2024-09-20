@@ -48,7 +48,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O projeto de um portfolio é essensial para que o desenvolvedor possa mostrar seus projetos e apresentá-los de maneira organizada. Esse meu projeto me ajudou a expor meu trabalho para o ambiente profissional.
+O projeto de um portfolio é essencial para que o desenvolvedor possa mostrar seus projetos e apresentá-los de maneira organizada. Esse meu projeto me ajudou a expor meu trabalho para o ambiente profissional.
 
 - [Visite o projeto online](https://portfolio-lake-five-28.vercel.app/)
 
