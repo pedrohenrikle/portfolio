@@ -63,7 +63,7 @@ export const eng: iTranslation = {
       {
         type: 'span',
         className: 'underline',
-        content: 'NodeJS, Java e Python',
+        content: 'NodeJS, Java and C#',
       },
     ],
   },
