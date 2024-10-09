@@ -28,6 +28,6 @@ export const skillsData = [
   'Java',
   'Spring Framework',
   'Linux',
-  'C#'
+  'C#',
   '.NET'
 ].sort();
