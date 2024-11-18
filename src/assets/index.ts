@@ -1,4 +1,4 @@
 import gympassApi from './pngs/gympassapi.png';
-import polls from './pngs/polls.png';
+import gssh from './pngs/gssh.png';
 
-export { gympassApi, polls };
+export { gympassApi, gssh };

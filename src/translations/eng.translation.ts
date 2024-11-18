@@ -58,12 +58,12 @@ export const eng: iTranslation = {
       },
       {
         type: 'text',
-        content: '. My focus is ',
+        content: '. Currently my focus is ',
       },
       {
         type: 'span',
         className: 'underline',
-        content: 'NodeJS, Java and C#',
+        content: 'Go, Java and C#',
       },
     ],
   },

@@ -1,10 +1,17 @@
 import type { iProject } from '@/translations/translations.types';
 import {
-  polls,
+  gssh,
   gympassApi
 } from '@/assets';
 
 export const engProjects: iProject[] = [
+  {
+    title: 'gSSH',
+    description:
+    'A remote connection tool made in Go using gRPC to streamline remote access and automate command execution across servers.',
+    imageUrl: gssh,
+    tags: ['Go', 'gRPC', 'PTY', 'TLS', 'Viper', 'Docker'],
+  },
   {
     title: 'GympassAPI',
     description:
@@ -12,29 +19,22 @@ export const engProjects: iProject[] = [
     tags: ['NodeJS', 'Fastify', 'PrismaORM', 'PostgreSQL', 'Docker'],
     imageUrl: gympassApi,
   },
-  {
-    title: 'polls',
-    description:
-      'A API to management the creation and voting on polls in real-time, using WebSockets for updates.',
-    imageUrl: polls,
-    tags: ['NodeJS', 'Fastify', 'PrismaORM', 'PostgreSQL', 'Redis', 'Docker'],
-  },
 ];
 
 export const ptBrProjects: iProject[] = [
+  {
+    title: 'gSSH',
+    description:
+    'Uma ferramenta de conexão remota feita em Go usando gRPC para agilizar o acesso remoto e automatizar a execução de comandos entre servidores.',
+    imageUrl: gssh,
+    tags: ['Go', 'gRPC', 'PTY', 'TLS', 'Viper', 'Docker'],
+  },
   {
     title: 'GympassAPI',
     description:
       'Uma API de gerenciamento de acesso de usuários a serviços de academias, baseado em localizações e com validade de check-ins',
     tags: ['NodeJS', 'Fastify', 'PrismaORM', 'PostgreSQL', 'Docker'],
     imageUrl: gympassApi,
-  },
-  {
-    title: 'polls',
-    description:
-      'Uma API para gerenciar a criação e votação em enquetes em tempo real, usando WebSockets para atualizações.',
-    imageUrl: polls,
-    tags: ['NodeJS', 'Fastify', 'PrismaORM', 'PostgreSQL', 'Redis', 'Docker'],
   },
 ];
 

@@ -1,6 +1,4 @@
 export const skillsData = [
-  'HTML',
-  'CSS',
   'Axios',
   'JavaScript',
   'TypeScript',
@@ -29,5 +27,7 @@ export const skillsData = [
   'Spring Framework',
   'Linux',
   'C#',
-  '.NET'
+  '.NET',
+  'Go',
+  'gRPC',
 ].sort();

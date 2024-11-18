@@ -7,7 +7,7 @@ import type { iExperience } from '@/translations/translations.types';
 
 export const engExperiences: iExperience[] = [
   {
-    title: 'Freelances',
+    title: 'Self Studying',
     location: 'From Home',
     description:
       'After 2 years of intensive study, I was able to complete the web development foundation',
@@ -34,7 +34,7 @@ export const engExperiences: iExperience[] = [
 
 export const ptBrExperiences: iExperience[] = [
   {
-    title: 'Estudo próprio',
+    title: 'Autodidata',
     location: 'De Casa',
     description:
       'Após 2 anos de estudo intensivo, consegui concluir a base do desenvolvimento web',

@@ -39,11 +39,11 @@ export const ptBr: iTranslation = {
       },
       { type: 'text', content: ' de experiência. Eu gosto de construir ' },
       { type: 'span', className: 'italic', content: 'aplicações e interfaces' },
-      { type: 'text', content: '. Meu foco é ' },
+      { type: 'text', content: '. Atualmente meu foco é ' },
       {
         type: 'span',
         className: 'underline',
-        content: 'NodeJS, Java e C#',
+        content: 'Go, Java e C#',
       },
     ],
   },
