@@ -63,7 +63,7 @@ export const ptBrExperiences: iExperience[] = [
     description:
       'Fui desenvolvedor full stack desenvolvendo projetos pessoais. Minha stack inclui ReactJS, NodeJS, TypeScript, Tailwind, PrismaORM, Java, SpringFramework, Python, PostgreSQL e Redis. Estou aberto a oportunidades em período integral.',
     icon: React.createElement(FaReact),
-    date: '2023 - presente',
+    date: '2023 - 2024',
   },
   {
     title: 'Estágio em Infraestrutura e Redes de Computadores',
@@ -71,7 +71,7 @@ export const ptBrExperiences: iExperience[] = [
     description:
       "Atualmente trabalho atuando na configuração e manutenção de redes, incluindo VLANs, switches, roteadores e serviços básicos como DHCP, DNS e firewalls em dispositivos físicos e máquinas virtuais Linux.",
     icon: React.createElement(FaServer),
-    date: '2024 - atual',
+    date: '2024 - presente',
   }  
 ];
 
