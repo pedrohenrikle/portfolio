@@ -111,9 +111,9 @@ export default function Intro() {
           href={
             currentTranslation
               ? currentTranslation.lang === 'pt-br'
-                ? '/pedroklein-profile.pdf'
-                : '/pedroklein-profile.pdf'
-              : '/pedroklein-profile.pdf'
+                ? '/pedroklein-curriculo.pdf'
+                : '/pedroklein-resume.pdf'
+              : '/pedroklein-curriculo.pdf'
           }
           download
         >

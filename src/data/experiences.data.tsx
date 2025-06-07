@@ -26,10 +26,18 @@ export const engExperiences: iExperience[] = [
     title: 'Full-Stack Developer',
     location: 'From Home',
     description:
-      "Currently I am a full stack developer developing personal projects. My stack includes ReactJS, NodeJS, TypeScript, Tailwind, PrismaORM, Java, SpringFramework, Python, PostgreSQL and Redis. I am open to full-time opportunities.",
+      "I was a full stack developer developing personal projects. My stack includes ReactJS, NodeJS, TypeScript, Tailwind, PrismaORM, Java, SpringFramework, Python, PostgreSQL and Redis. I am open to full-time opportunities.",
     icon: React.createElement(FaReact),
-    date: '2023 - present',
+    date: '2023 - 2024',
   },
+  {
+    title: 'Computer Infrastructure and Networks Internship',
+    location: 'São Leopoldo City Hall',
+    description:
+      "Currently working with network setup and maintenance, including VLANs, switches, routers, and basic services like DHCP, DNS, and firewalls on Linux and physical devices.",
+    icon: React.createElement(FaServer),
+    date: '2024 - now',
+  }
 ];
 
 export const ptBrExperiences: iExperience[] = [
@@ -53,10 +61,18 @@ export const ptBrExperiences: iExperience[] = [
     title: 'Desenvolvedor Full Stack',
     location: 'De Casa',
     description:
-      'Atualmente sou um desenvolvedor full stack desenvolvendo projetos pessoais. Minha stack inclui ReactJS, NodeJS, TypeScript, Tailwind, PrismaORM, Java, SpringFramework, Python, PostgreSQL e Redis. Estou aberto a oportunidades em período integral.',
+      'Fui desenvolvedor full stack desenvolvendo projetos pessoais. Minha stack inclui ReactJS, NodeJS, TypeScript, Tailwind, PrismaORM, Java, SpringFramework, Python, PostgreSQL e Redis. Estou aberto a oportunidades em período integral.',
     icon: React.createElement(FaReact),
     date: '2023 - presente',
   },
+  {
+    title: 'Estágio em Infraestrutura e Redes de Computadores',
+    location: 'Prefeitura de São Leopoldo',
+    description:
+      "Atualmente trabalho atuando na configuração e manutenção de redes, incluindo VLANs, switches, roteadores e serviços básicos como DHCP, DNS e firewalls em dispositivos físicos e máquinas virtuais Linux.",
+    icon: React.createElement(FaServer),
+    date: '2024 - atual',
+  }  
 ];
 
 const experiencesObj: Record<Langs, iExperience[]> = {

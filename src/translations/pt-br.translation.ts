@@ -43,7 +43,7 @@ export const ptBr: iTranslation = {
       {
         type: 'span',
         className: 'underline',
-        content: 'Go, Java e C#',
+        content: 'C e Go',
       },
     ],
   },
